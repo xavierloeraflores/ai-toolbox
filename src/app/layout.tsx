@@ -1,6 +1,7 @@
 import "~/styles/globals.css";
 import { GeistSans } from "geist/font/sans";
 import { ThemeProvider } from "~/components/theme-provider";
+import { Header } from "~/components/header";
 
 export const metadata = {
   title: "",
@@ -22,6 +23,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <Header />
           {children}
         </ThemeProvider>
       </body>
