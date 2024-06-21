@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 import { openai } from "@ai-sdk/openai";
 import { streamText } from "ai";
 
