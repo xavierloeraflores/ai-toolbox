@@ -1,18 +1,15 @@
 "use client";
 import { useChat } from "@ai-sdk/react";
 import { Input } from "~/components/ui/input";
-
+import { ChatBubble } from "./chat-bubble";
 export default function Chat() {
   const { messages, input, handleInputChange, handleSubmit } = useChat();
 
   return (
     <div className="stretch mx-auto flex w-full max-w-md flex-grow flex-col py-24">
       <div>
-        {messages.map((m) => (
-          <div key={m.id} className="whitespace-pre-wrap">
-            {m.role === "user" ? "User: " : "AI: "}
-            {m.content}
-          </div>
+        {messages.map((message) => (
+          <ChatBubble message={message} key={message.id} />
         ))}
       </div>
 
