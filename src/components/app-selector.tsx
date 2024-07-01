@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { cn } from "~/lib/utils";
 
-type App = {
+export type App = {
     name: string;
     url: string;
     image: string;
