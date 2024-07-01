@@ -36,20 +36,6 @@ export const Header: React.FC = () => {
                                         text: "Learn more about the website",
                                     }}
                                 />
-                                <Destination
-                                    props={{
-                                        link: "/hume",
-                                        title: "Hume AI EVI",
-                                        text: "Hume EVI Demo",
-                                    }}
-                                />
-                                <Destination
-                                    props={{
-                                        link: "/chatgpt",
-                                        title: "ChatGPT",
-                                        text: "ChatGPT Demo",
-                                    }}
-                                />
                                 {/* <Destination
                   props={{
                     link: "/xavier",
