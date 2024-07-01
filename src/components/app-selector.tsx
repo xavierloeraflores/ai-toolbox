@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { cn } from "~/lib/utils";
+import { AppSelection } from "./app-selection";
 
 export type App = {
     name: string;
@@ -17,11 +17,7 @@ export const AppSelector: React.FC<
     return (
         <div className={cn("", className)}>
             {apps.map((app, index) => {
-                return (
-                    <Link href={app.url} key={index}>
-                        {app.name}
-                    </Link>
-                );
+                return <AppSelection app={app} className="" key={index} />;
             })}
         </div>
     );
